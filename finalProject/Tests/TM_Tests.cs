@@ -25,7 +25,7 @@ namespace finalProject.Tests
         {
             //tm page
             TMPage tmobj = new TMPage();
-            tmobj.editTM(driver,"dummy edit","M");
+            tmobj.editTM(driver,"dummy edit","M","39");
             
 
         }

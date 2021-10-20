@@ -1,0 +1,8 @@
+1)open the coomand promt where the json file located.
+2)type the code to check weather the newman installed in the system 
+	newman -v 
+	expected output will be :4.4or somw thing vwersion number
+
+3) to run the newman and get the report we need to type the following code
+
+	newman run filename -e envfile name press enter

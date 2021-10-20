@@ -168,7 +168,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I nagivate to Time and material page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 18
- testRunner.When(string.Format("I update \'{0}\' \'{1}\' on an existing time and material record", description, typeCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I update \'{0}\' \'{1}\' \'<Price>\' on an existing time and material record.", description, typeCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 19
  testRunner.Then(string.Format("the record should have the updated \'{0}\'", description), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");

@@ -42,18 +42,20 @@ namespace finalProject.StepDefination
             //creating the time and meterial data and click on last page 
             tPage.createTM(driver);
         }
+        
+        
         //updating data values ... using passing two string 
-        [When(@"I update '(.*)' '(.*)' on an existing time and material record")]
-        public void WhenIUpdateOnAnExistingTimeAndMaterialRecord(string p0, string p1)
+        [When(@"I update '(.*)' '(.*)' '(.*)' on an existing time and material record\.")]
+        public void WhenIUpdateOnAnExistingTimeAndMaterialRecord_(string p0, string p1, string p2)
         {
             //Navigating to the last page of Time and metrial page
 
             tPage.setLastPage(driver);
             //editing last page
-            tPage.editTM(driver, p0, p1);
-           
+            tPage.editTM(driver, p0, p1, p2);
+            Console.WriteLine("test",p2);
         }
-        
+
         [When(@"I delete the time and marerial record")]
         public void WhenIDeleteTheTimeAndMarerialRecord()
         {

@@ -86,7 +86,7 @@ namespace finalProject.Pages
 		}
 
 		//creating the edit method or updated method 
-		public void editTM(IWebDriver driver, string p0, string typeCode)
+		public void editTM(IWebDriver driver, string p0, string typeCode, string nPrice)
 		{
 			Thread.Sleep(2000);
 			//Navigating to the last page of Time and metrial page
@@ -130,8 +130,10 @@ namespace finalProject.Pages
 				driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]")).Click();
 				IWebElement nPs = driver.FindElement(By.XPath("//*[@id='Price']"));
 				nPs.Clear();
-				driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]")).Click();
+				Console.WriteLine(nPrice);
 				nPs.SendKeys("54");
+				//driver.FindElement(By.XPath("//*[@id='TimeMaterialEditForm']/div/div[4]/div/span[1]/span/input[1]")).Click();
+				
 
 				//saveing the updated data 
 				driver.FindElement(By.Id("SaveButton")).Click();
